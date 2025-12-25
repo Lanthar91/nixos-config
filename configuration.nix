@@ -92,6 +92,8 @@
     extraGroups = [ "networkmanager" "wheel" ];
   };
 
+nixpkgs.config.allowUnfree = true;
+
   # СИСТЕМНЫЕ ПАКЕТЫ
   environment.systemPackages = with pkgs; [
     vim
