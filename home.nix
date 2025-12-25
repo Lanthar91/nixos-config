@@ -7,6 +7,7 @@
   home.packages = with pkgs; [
     fastfetch
     htop
+    firefox
   ];
 
   home.stateVersion = "24.11";
