@@ -110,6 +110,7 @@ nixpkgs.config.allowUnfree = true;
     wget
     git
     home-manager
+    claude-code
   ];
 
   system.stateVersion = "26.05"; 
