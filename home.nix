@@ -1,8 +1,8 @@
 { config, pkgs, ... }:
 
 {
-  home.username = "user"; # Твой логин
-  home.homeDirectory = "/home/user";
+  home.username = "el"; # Твой логин
+  home.homeDirectory = "/home/el";
 
   home.packages = with pkgs; [
     fastfetch
@@ -12,4 +12,18 @@
 
   home.stateVersion = "24.11";
   programs.home-manager.enable = true;
+
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+
+    # Самое вкусное - Oh My Zsh
+    oh-my-zsh = {
+      enable = true;
+      plugins = [ "git" "sudo" "docker" ];
+      theme = "robbyrussell"; # Или "agnoster", если любишь powerline
+    };
+  };
 }
