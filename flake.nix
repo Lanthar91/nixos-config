@@ -21,7 +21,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.user = import ./home.nix; # Замени 'user' на свой логин!
+            home-manager.users.el = import ./home.nix; # Замени 'user' на свой логин!
           }
         ];
       };
