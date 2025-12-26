@@ -90,10 +90,14 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # ПОЛЬЗОВАТЕЛИ
-  users.users.user = { # Замени на свой логин
+ programs.zsh.enable = true;
+
+  users.users.el = {
     isNormalUser = true;
-    description = "My User";
-    extraGroups = [ "networkmanager" "wheel" ];
+    description = "el";
+    extraGroups = [ "networkmanager" "wheel" "video" "audio" ]; 
+    # Какой шелл использовать (по умолчанию bash)
+    shell = pkgs.zsh; 
   };
 
 nixpkgs.config.allowUnfree = true;
