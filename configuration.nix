@@ -5,7 +5,11 @@
   # =================================================
   # ГРАФИКА И ОКРУЖЕНИЕ (PLASMA 6 + WAYLAND)
   # =================================================
-  
+  services.xserver = {
+  xkb.layout = "us,ru";
+  xkbOptions = "grp:alt_shift_toggle";
+};
+
   # Включаем X11 (нужен для SDDM и совместимости)
   services.xserver.enable = true;
 
