@@ -14,11 +14,21 @@
   services.xserver.enable = true;
 
   # Дисплейный менеджер SDDM
-  services.displayManager.sddm.enable = true;
-  services.displayManager.sddm.wayland.enable = true;
+  #services.displayManager.sddm.enable = true;
+  #services.displayManager.sddm.wayland.enable = true;
 
   # Окружение Plasma 6
-  services.desktopManager.plasma6.enable = true;
+  #services.desktopManager.plasma6.enable = true;
+  # Enable the COSMIC login manager
+  services.displayManager.cosmic-greeter.enable = true;
+  services.displayManager.autoLogin = {
+    enable = true;
+    # Replace `yourUserName` with the actual username of user who should be automatically logged in
+    user = "el";
+
+  # Enable the COSMIC desktop environment
+  services.desktopManager.cosmic.enable = true;
+
 
   # =================================================
   # НАСТРОЙКИ NVIDIA
