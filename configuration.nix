@@ -24,7 +24,7 @@
   services.displayManager.autoLogin = {
     enable = true;
     # Replace `yourUserName` with the actual username of user who should be automatically logged in
-    user = "yourUserName";
+    user = "el";
   };
 
   # Enable the COSMIC desktop environment
