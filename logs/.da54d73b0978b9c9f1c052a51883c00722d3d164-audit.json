@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/el/nixos-config/logs/.da54d73b0978b9c9f1c052a51883c00722d3d164-audit.json",
+    "files": [
+        {
+            "date": 1767421732526,
+            "name": "/home/el/nixos-config/logs/error-2026-01-03.log",
+            "hash": "3dab00fb2b2acedf3019e09911659f013c2afc6eb985338bd407f31aaea39c3d"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -6,6 +6,9 @@
     gnomeExtensions.blur-my-shell
     gnomeExtensions.dash-to-dock
     gnomeExtensions.user-themes
+    ###Internet
+    google-chrome
+
   ];
 
   # Firefox: XWayland mode for stability after suspend
@@ -23,6 +26,10 @@
     };
 
     "org/gnome/shell/extensions/blur-my-shell/dash-to-dock" = {
+      blur = false;
+    };
+
+    "org/gnome/shell/extensions/blur-my-shell/panel" = {
       blur = false;
     };
 

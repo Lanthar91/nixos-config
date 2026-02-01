@@ -6,7 +6,7 @@
   users.users.el = {
     isNormalUser = true;
     description = "el";
-    extraGroups = [ "networkmanager" "wheel" "video" "audio" ];
+    extraGroups = [ "networkmanager" "wheel" "video" "audio" "docker" ];
     shell = pkgs.zsh;
   };
 }

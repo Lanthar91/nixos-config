@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/el/nixos-config/logs/.feb5a60308e191ae2fb52f01e7651f88f63fc14c-audit.json",
+    "files": [
+        {
+            "date": 1767421732529,
+            "name": "/home/el/nixos-config/logs/meiliSync-2026-01-03.log",
+            "hash": "01f2e324b90576b3f1aea609272f05a249b4de0a137f983325d7ff91307ec088"
+        }
+    ],
+    "hashType": "sha256"
+}

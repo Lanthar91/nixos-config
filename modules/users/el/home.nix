@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   imports = [
@@ -14,14 +14,30 @@
   home.packages = with pkgs; [
     fastfetch
     htop
-    firefox
+    inputs.popai.packages.${pkgs.system}.default
   ];
+
+  programs.firefox = {
+    enable = true;
+    profiles.default = {
+      id = 0;
+      isDefault = true;
+      settings = {
+        # Включить поддержку userChrome.css
+        "toolkit.legacyUserProfileCustomizations.stylesheets" = true;
+      };
+    };
+  };
+
+  # stylix.targets.firefox.profileNames = [ "default" ];
+  stylix.targets.firefox.enable = true;
+  stylix.targets.firefox.firefoxGnomeTheme.enable = true;
 
   gtk = {
     enable = true;
     iconTheme = {
-      package = pkgs.reversal-icon-theme;
-      name = "Reversal";
+      package = pkgs.papirus-icon-theme;
+      name = "Papirus-Dark";
     };
   };
  programs.git = {

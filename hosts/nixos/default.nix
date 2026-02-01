@@ -17,6 +17,11 @@
     ../../modules/users/el
 
     ../../modules/dev.nix
+
+    ../../modules/virtualisation/docker.nix
+    ../../modules/virtualisation/waydroid.nix
+
+    ../../modules/services/mariadb.nix
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
